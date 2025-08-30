@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewFinder - Discover Local Cafes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-mug-hot"></i>
+            <h1>BrewFinder</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="#">Local's Picks</a></li>
+                <li><a href="#">Coffee Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for cafes, coffee types, or locations...">
+                <button><i class="fas fa-search"></i> Search</button>
+            </div>
+            
+            <div class="filters">
+                <button class="filter-btn active"><i class="fas fa-map-marker-alt"></i> Near Me</button>
+                <button class="filter-btn"><i class="fas fa-star"></i> Highly Rated</button>
+                <button class="filter-btn"><i class="fas fa-wifi"></i> Good for Work</button>
+                <button class="filter-btn"><i class="fas fa-paw"></i> Pet Friendly</button>
+                <button class="filter-btn"><i class="fas fa-seedling"></i> Vegan Options</button>
+            </div>
+            
+            <div class="map-container">
+                <i class="fas fa-map-marked-alt" style="font-size: 2rem; margin-right: 10px;"></i>
+                Google Maps Integration Would Appear Here
+            </div>
+            
+            <h2 class="section-title">Cafes Near You</h2>
+            <div class="cafe-list">
+                <div class="cafe-card locals-choice">
+                    <div class="cafe-img">
+                        <i class="fas fa-coffee" style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="cafe-info">
+                        <h3>The Hidden Bean</h3>
+                        <div class="cafe-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 4.8 (128)</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 0.4 mi</span>
+                        </div>
+                        <p>Cozy spot known for its artisan roasts and homemade pastries.</p>
+                        <div class="cafe-features">
+                            <span class="feature">Pour-over</span>
+                            <span class="feature">Outdoor Seating</span>
+                            <span class="feature">Local Art</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cafe-card">
+                    <div class="cafe-img">
+                        <i class="fas fa-coffee" style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="cafe-info">
+                        <h3>Urban Grind</h3>
+                        <div class="cafe-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 4.5 (92)</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 0.6 mi</span>
+                        </div>
+                        <p>Modern cafe with fast WiFi and plenty of power outlets.</p>
+                        <div class="cafe-features">
+                            <span class="feature">Fast WiFi</span>
+                            <span class="feature">Work Friendly</span>
+                            <span class="feature">Cold Brew</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cafe-card">
+                    <div class="cafe-img">
+                        <i class="fas fa-coffee" style="font-size: 3rem;"></i>
+                    </div>
+                    <div class="cafe-info">
+                        <h3>Riverside Roasters</h3>
+                        <div class="cafe-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 4.7 (215)</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 0.8 mi</span>
+                        </div>
+                        <p>Waterfront views with ethically sourced beans and roasting on-site.</p>
+                        <div class="cafe-features">
+                            <span class="feature">River View</span>
+                            <span class="feature">On-site Roasting</span>
+                            <span class="feature">Live Music</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="coffee-knowledge">
+                <h2 class="section-title">Coffee Knowledge</h2>
+                <p>Expand your coffee expertise with our guides and tips.</p>
+                
+                <div class="knowledge-grid">
+                    <div class="knowledge-card">
+                        <h4><i class="fas fa-mortar-pestle"></i> Brewing Methods</h4>
+                        <p>Learn about pour-over, French press, AeroPress, and more.</p>
+                    </div>
+                    
+                    <div class="knowledge-card">
+                        <h4><i class="fas fa-globe-americas"></i> Bean Origins</h4>
+                        <p>Discover how geography affects coffee flavor profiles.</p>
+                    </div>
+                    
+                    <div class="knowledge-card">
+                        <h4><i class="fas fa-language"></i> Coffee Lingo</h4>
+                        <p>Understand terms like body, acidity, and single origin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <h2 class="section-title">Personalized Recommendations</h2>
+            <p>Based on your preferences and previous visits, we recommend:</p>
+            
+            <div class="cafe-list">
+                <div class="cafe-card">
+                    <div class="cafe-img">
+                        <i class="fas fa-coffee" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="cafe-info">
+                        <h3>Artisan's Nook</h3>
+                        <div class="cafe-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 4.9 (87)</span>
+                        </div>
+                        <p>Similar to your favorite "Hidden Bean" but with more pastry options.</p>
+                    </div>
+                </div>
+                
+                <div class="cafe-card">
+                    <div class="cafe-img">
+                        <i class="fas fa-coffee" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="cafe-info">
+                        <h3>Study Brew</h3>
+                        <div class="cafe-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 4.6 (103)</span>
+                        </div>
+                        <p>Quiet atmosphere with dedicated study rooms and unlimited refills.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Recent Searches</h2>
+            <ul class="recent-searches">
+                <li>
+                    <i class="fas fa-search"></i>
+                    "Cold brew near me"
+                </li>
+                <li>
+                    <i class="fas fa-search"></i>
+                    "Cafes with outdoor seating"
+                </li>
+                <li>
+                    <i class="fas fa-search"></i>
+                    "Best latte art"
+                </li>
+            </ul>
+            
+            <h2 class="section-title">Coffee of the Day</h2>
+            <div class="coffee-of-day">
+                <h4>Ethiopian Yirgacheffe</h4>
+                <p>Bright and fruity with notes of citrus and berry. Perfect for pour-over brewing.</p>
+                <button class="filter-btn">
+                    <i class="fas fa-coffee"></i> Find cafes serving this
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>BrewFinder &copy; 2023 - Find your perfect coffee spot</p>
+        <p class="footer-note">
+            This is a demo project. In a real implementation, we would use Google Maps API to fetch actual cafe data.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
