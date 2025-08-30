@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f5f0;
+    color: #3e2e1f;
+}
+
+header {
+    background: linear-gradient(to right, #3e2e1f, #6b4c35);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.logo i {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d4b896;
+}
+
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 7;
+}
+
+.sidebar {
+    flex: 3;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    background-color: #6b4c35;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #3e2e1f;
+}
+
+.map-container {
+    height: 500px;
+    background-color: #e9e1d6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b4c35;
+    font-weight: 500;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: white;
+    border: 1px solid #d4b896;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: #d4b896;
+    color: white;
+}
+
+.section-title {
+    margin: 25px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d4b896;
+    color: #3e2e1f;
+    font-weight: 600;
+}
+
+.cafe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cafe-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.cafe-card:hover {
+    transform: translateY(-5px);
+}
+
+.cafe-img {
+    height: 160px;
+    background-color: #e9e1d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b4c35;
+    position: relative;
+}
+
+.cafe-info {
+    padding: 15px;
+}
+
+.cafe-info h3 {
+    margin-bottom: 8px;
+    color: #3e2e1f;
+}
+
+.cafe-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #6b4c35;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #e6b325;
+}
+
+.cafe-features {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #f8f5f0;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #6b4c35;
+}
+
+.locals-choice {
+    border-left: 4px solid #e6b325;
+}
+
+.locals-choice .cafe-img::after {
+    content: "Local's Choice";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e6b325;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.coffee-knowledge {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.knowledge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.knowledge-card {
+    background-color: #f8f5f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.knowledge-card h4 {
+    color: #3e2e1f;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.recent-searches {
+    list-style: none;
+}
+
+.recent-searches li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recent-searches i {
+    color: #6b4c35;
+}
+
+.coffee-of-day {
+    background-color: #f8f5f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.coffee-of-day h4 {
+    color: #3e2e1f;
+    margin-bottom: 10px;
+}
+
+.coffee-of-day p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #3e2e1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-note {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .cafe-list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    nav ul {
+        justify-content: center;
+    }
+    
+    .search-bar {
+        flex-direction: column;
+    }
+}
